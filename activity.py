@@ -71,7 +71,7 @@ class activity():
         yourscore = 0
         scorelist = []
         print("The perfect score is 0.0 which means all hours were spent usefully.")
-        print("The higher the score, the worse")
+        print("All activities will have a score, the higher the number the less 'useful' it is.")
         for activeindex, i in enumerate(self.activity):
             try:
                 activescore = (self.hour[activeindex] / self.usefulness[activeindex])
@@ -86,9 +86,8 @@ class activity():
         for index, i in enumerate(scorelist):
             print(self.activity[index], (i-self.hour[index]))
         time.sleep(2)
-        print("The higher the number, the worse.")
+        print("Consider lowering the number of hours of some of your activities with a higher score to improve them")
         print("")
-        print("Consider lowering the number of hours of some of your activities with a worse score to improve them")
         print("The key is not to try and reach 0, but to get as close to 0 as possible given your lifestyle.")
         print("You could try changing the activities so they are more useful/beneficial to you.")
         print("Or reducing the number of hours of some activities, and increasing the hours of others.")
@@ -96,18 +95,8 @@ class activity():
         print("Hope this was helpful!")
         input("Press anything to quit...")
         sys.exit()
-           
-day = activity()
+ 
 print("Day activity usefulness calculator")
-input("press anything to begin")
+input("Press anything to begin...")
+day = activity()
 day.add()
-
-        
-    
-        
-
-        
-
-        
-
-   
