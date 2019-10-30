@@ -99,6 +99,7 @@ class activity():
            
 day = activity()
 print("Day activity usefulness calculator")
+input("press anything to begin")
 day.add()
 
         
