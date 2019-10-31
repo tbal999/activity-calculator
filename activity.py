@@ -18,9 +18,9 @@ class activity():
         self.hour = []
     def add(self):
         activity_item = input("Type in your activity: ")
-        no_of_hours = input("Type in number of hours you do this a day: ")
+        no_of_hours = input("Type in number of hours+minutes you do this a day i.e 1.15: ")
         try:
-            no_of_hours_int = int(no_of_hours)
+            no_of_hours_int = float(no_of_hours)
             if no_of_hours_int > 24 or no_of_hours_int <= 0:
                 print("error Type in a number less than 24 / greater than 0.")
                 self.add()
